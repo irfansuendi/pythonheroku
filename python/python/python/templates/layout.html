@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Yayasan</title>
+  </head>
+  <link href="../static/content/bootstrap.min.css" rel="stylesheet">
+<link href="../static/content/dashboard.css" rel="stylesheet">
+<link href="../static/content/sticky-footer-navbar.css" rel="stylesheet">
+<link href="../static/content/dataTables.bootstrap.css" rel="stylesheet">
+<link href="../static/content/dataTables.responsive.css" rel="stylesheet">
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/SaldoBrg">Yayasan</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Bantu<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/DataSekolah">Data Sekolah</a></li>
+                <li><a href="/DataPegawai">Data Guru/Pegawai</a></li>
+                <li><a href="/DataWaliKelas">Data wali Kelas</a></li>
+                <li><a href="/DataMurid">Data Murid</a></li>
+                <li><a href="/DataKelas">Data Kelas</a></li>
+                <li><a href="/DataTS">Data Tingkat Studi</a></li>
+                <li><a href="/DataSPP">Data SPP</a></li>
+                <li><a href="/DataRekening">Data Rekening</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SPP<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/InputSPP">Input Data SPP</a></li>
+                <li><a href="/LaporanSPP">Laporan Data SPP</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pengajuan<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/InputDataPengajuan">Input Data Pengajuan</a></li>
+                <li><a href="/LapPengajuan">Laporan Data Penghajuan</a></li>
+                <li><a href="/InputDataConfirm">Input Data Konfirmasi</a></li>
+                <li><a href="/LapConfirm">Laporan Data Konfirmasi</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formulir<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/InputDataFormulir">Data Formulir</a></li>
+                <li><a href="/LapFormulir">Laporan Data Formulir</a></li>
+              </ul>
+            </li>
+            <li><a href="/">Logout</a></li>
+            <!--<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/get">GET</a></li>
+                <li><a href="/posts">POST</a></li>
+                <li><a href="/del">DELETE</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <br>
+    <div class="container-fluid">{% block content %}{% endblock %}</div>
+    <footer class="footer">
+      <div class="container">
+        <img  src="../static/pict/logo.jpg" width="160" height="37" >
+      </div>
+    </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../static/scripts/jquery.min.js"></script>
+      <script src="../static/scripts/bootstrap.min.js"></script>
+      <script src="../static/scripts/jquery.dataTables.min.js"></script>
+      <script src="../static/scripts/dataTables.bootstrap.min.js"></script>
+      <script src="../static/scripts/dataTables.responsive.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+      $('#dataTables-example').DataTable({
+          responsive: true
+      });
+  });
+  </script>
+  </body>
+</html>

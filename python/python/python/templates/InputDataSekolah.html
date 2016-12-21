@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}  
+<div class="col-md-6 col-md-offset-3">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Input Data Sekolah</h3>
+    </div>
+    <div class="panel-body">    
+        <div class="row">
+            <form role="form" method="post">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label>Id Sekolah</label>
+                        <input class="form-control" placeholder="Enter text" name="NamaKons" value="{{request.form.NamaKons}}">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label>Nama sekolah</label>
+                        <input class="form-control" placeholder="Enter text" name="NamaKons" value="{{request.form.NamaKons}}">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label>kota</label>
+                        <input class="form-control" placeholder="Enter text" name="NamaKons" value="{{request.form.NamaKons}}">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-success">Simpan</button>
+                        <button type="reset" class="btn btn-sm btn-danger">Batal</button>
+                    </div>   
+                </div>
+            </form>              
+        </div>    
+    </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}  
+<div class="col-md-12">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Input SPP</h3>
+    </div>
+    <div class="panel-body">    
+        <div class="row">
+            <form role="form" method="post">
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>No. Piutang</label>
+                        <input class="form-control" placeholder="Enter text" name="NamaKons" value="{{request.form.NamaKons}}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                </div> 
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Tanggal</label>
+                        <input class="form-control" placeholder="Enter text" name="NamaKons" value="{{request.form.NamaKons}}">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Tgl Jatuh Tempo</label>
+                        <input class="form-control" placeholder="Enter text" name="NamaKons" value="{{request.form.NamaKons}}">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Sekolah</label>
+                        <select class="form-control" name="cabang">
+                            <option value="all">ALL</option>
+                            <option value="Sekolah A">Sekolah A</option>
+                            <option value="Sekolah B">Sekolah B</option>
+                            <option value="Sekolah C">Sekolah C</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Kelas</label>
+                        <select class="form-control" name="cabang">
+                            <option value="all">ALL</option>
+                            <option value="Kelas A">Kelas A</option>
+                            <option value="Kelas B">kelas B</option>
+                            <option value="Kelas C">kelas C</option>
+                        </select>
+                    </div>
+                </div>     
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>No. Induk</label>
+                        <input class="form-control" placeholder="Enter text" name="NamaKons" value="{{request.form.NamaKons}}">
+                    </div>
+                </div>   
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label>Kode SPP</label>
+                        <input class="form-control" placeholder="Enter text" name="NamaKons" value="{{request.form.NamaKons}}">
+                    </div>
+                </div>   
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label>Jumlah</label>
+                        <input class="form-control" placeholder="Enter text" name="NamaKons" value="{{request.form.NamaKons}}">
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-success">Simpan</button>
+                        <button type="reset" class="btn btn-sm btn-danger">Batal</button>
+                    </div>   
+                </div>
+            </form>              
+        </div>    
+    </div>
+</div>
+</div>
+{% endblock %}
